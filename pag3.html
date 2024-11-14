@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Documento sin título</title>
+	<link rel="stylesheet" href="css/sigpagina.css">
+	<link rel="stylesheet" href="css/Principal.css">
+	<link rel="stylesheet" href="css/pag3.css">
+</head>
+<body>
+
+	<header class="barra_principal">
+        <div class="contenido_barra">
+            <div class="logo">
+                <div class="circulo-logo"></div>
+                Robot Wiki
+            </div>
+            <left><nav class="links-arriva">
+                <a href="index.html">inicio</a>
+                <a href="pag2.html">Tutorial</a>
+            </left></nav>
+
+        </div>
+    </header>
+
+	<div class="main-content">
+        <div class="Tipografia">
+            <section class="component-section">
+                <div class="caja-foto">
+					<h1 class="title">Codigo Arduino</h1>
+						<div class="letra">
+							<div class="comentario">// Pines de motor</div>
+							<div class="Codigo">const int motorIzq1 = 3;</div>
+							<div class="Codigo">const int motorIzq2 = 4;</div>
+							<div class="Codigo">const int motorIzq1 = 5;</div>
+							<div class="Codigo">const int motorIzq1 = 6;</div>
+							<div class="Codigo">void setup() {</div>
+							<div class="comentario">// Configuración de pines de salida para el controlador L293D</div> 
+							<div class="Codigo">pinMode(motorIzq1, OUTPUT);</div>
+							<div class="Codigo">pinMode(motorIzq2, OUTPUT);</div>
+							<div class="Codigo">pinMode(motorDer1, OUTPUT);</div>
+							<div class="Codigo">pinMode(motorDer2, OUTPUT);</div>
+							<div class="comentario">// Iniciar comunicación serial para el módulo Bluetooth</div>
+							<div class="Codigo">Serial.begin(9600);</div>
+							<div class="Codigo">}</div>
+							<div class="Codigo">void loop() {</div>
+							<div class="comentario">// Verifica si hay datos disponibles del Bluetooth</div>
+							<div class="Codigo">if (Serial.available() > 0) {</div>
+							<div class="Codigo">  char command = Serial.read();</div>
+							<div class="Codigo">switch (command) {</div>
+							<div class="Codigo">case 'F':  // Avanzar</div>
+							<div class="Codigo">adelante();</div>
+							<div class="Codigo">break;</div>
+							<div class="Codigo">case 'B':  // Retroceder</div>
+							<div class="Codigo">atras();</div>
+							<div class="Codigo">break;</div>
+							<div class="Codigo">case 'L':  // Girar a la izquierda</div>
+							<div class="Codigo">izquierda();</div>
+							<div class="Codigo">break;</div>
+							<div class="Codigo">case 'R':  // Girar a la derecha</div>
+							<div class="Codigo">derecha();</div>
+							<div class="Codigo">break;</div>
+							<div class="Codigo">case 'S':  // Detenerse</div>
+							<div class="Codigo">parar();</div>
+							<div class="Codigo">break;</div>
+							<div class="Codigo">}</div>
+							<div class="Codigo">}</div>
+							<div class="Codigo">}</div>
+							<div class="comentario">// Funciones de movimiento</div>
+							<div class="Codigo">void adelante() {</div>
+							<div class="Codigo">digitalWrite(motorIzq1, HIGH);</div>
+							<div class="Codigo">digitalWrite(motorIzq2, LOW);</div>
+							<div class="Codigo">digitalWrite(motorDer1, HIGH);</div>
+							<div class="Codigo">digitalWrite(motorDer2, LOW);</div>
+							<div class="Codigo">}</div>
+							<div class="Codigo">void atras() {</div>
+							<div class="Codigo">digitalWrite(motorIzq1, LOW);</div>
+							<div class="Codigo">digitalWrite(motorIzq2, HIGH);</div>
+							<div class="Codigo">digitalWrite(motorDer1, LOW);</div>
+							<div class="Codigo">digitalWrite(motorDer2, HIGH);</div>
+							<div class="Codigo">}</div>
+							<div class="Codigo">void izquierda() {</div>
+							<div class="Codigo">digitalWrite(motorIzq1, LOW);</div>
+							<div class="Codigo">digitalWrite(motorIzq2, HIGH);</div>
+							<div class="Codigo">digitalWrite(motorDer1, HIGH);</div>
+							<div class="Codigo">digitalWrite(motorDer2, LOW);</div>
+							<div class="Codigo">}</div>
+							<div class="Codigo">void derecha() {</div>
+							<div class="Codigo">digitalWrite(motorIzq1, HIGH);</div>
+							<div class="Codigo">digitalWrite(motorIzq2, LOW);</div>
+							<div class="Codigo">digitalWrite(motorDer1, LOW);</div>
+							<div class="Codigo">digitalWrite(motorDer2, HIGH);</div>
+							<div class="Codigo">}</div>
+							<div class="Codigo">void parar() {</div>
+							<div class="Codigo">digitalWrite(motorIzq1, LOW);</div>
+							<div class="Codigo">digitalWrite(motorIzq2, LOW);</div>
+							<div class="Codigo">digitalWrite(motorDer1, LOW);</div>
+							<div class="Codigo">digitalWrite(motorDer2, LOW);</div>
+							<div class="Codigo">}</div>
+						</div>
+					</p>
+                </div>
+            </section>
+        </div>
+		<div class="nav-container">
+			<div class="chapter-nav">
+				<button class="nav-btn" type="button"onclick="window.location.href='pag2.html'">
+					<i class="arrow left"></i>
+				</button>
+				<select class="chapter-select" id="chapterSelect" onchange="navigateToPage()">
+					<option value="index.html">Página 1</option>
+					<option value="pag2.html">Página 2</option>
+					<option value="pag3.html">Página 3</option>
+				</select>
+				<button class="nav-btn" type="button" onclick="window.location.href='index.html'">
+					<i class="arrow right"></i>
+				</button>
+			</div>
+		</div>
+		</div>
+		<script src="javascript/boton.js"></script>
+</body>
+</html>

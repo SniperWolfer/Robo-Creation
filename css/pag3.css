@@ -1,0 +1,20 @@
+.letra {
+    text-align: left;    
+    font-size: 125%;
+}
+
+.keyword { 
+    color: #81a1c1; font-weight: bold; 
+}
+.type { 
+    color: #88c0d0; 
+}
+.codigo { 
+    color: #b32816; 
+}
+.comentario { 
+    color: #4c566a; font-style: italic; 
+}
+.string { 
+    color: #a3be8c; 
+}

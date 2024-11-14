@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Robot - Tutorial Arduino</title>
+    <link rel="stylesheet" href="css/Principal.css">
+    <link rel="stylesheet" href="css/Tipografia.css">
+    <link rel="stylesheet" href="css/sigpagina.css">
+    <link rel="stylesheet" href="javascript/boton.js">
+    <link rel="stylesheet" href="css/tabla.css">
+</head>
+<body>
+    <header class="barra_principal">
+        <div class="contenido_barra">
+            <div class="logo">
+                <div class="circulo-logo"><img src="fotos/robot." alt=""></div>
+                Robot Wiki
+            </div>
+            <left><nav class="links-arriva">
+                <a href="pag2.html">Tutorial</a>
+                <a href="pag3.html">Codigo</a>
+            </left></nav>
+
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="Tipografia">
+        <h1 class="title">ROBOTCREATION</h1>
+        <section class="component-section">
+        <h1><p>Este tutorial te guiará paso a paso en la construcción de un robot básico usando Arduino. Aprenderás qué materiales que necesitas, cómo hacer las conexiones y cómo programarlo para que realice movimientos. :)</p></h1>
+        <div class="caja-foto">
+            <img src="fotos/golpe.jpg" alt="golpe"width=1135 height=600>
+        </div>
+            <h2>Fotos de los componetes: </h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Placa Arduino UNO</h3>
+                    <img src="fotos/placa.png" alt="Arduino UNO">
+                </div>
+                <div class="component-card">
+                    <h3>Motorshield L293d</h3>
+                    <img src="fotos/punte h.png" alt="Motorshield">
+                </div>
+                <div class="component-card">
+                    <h3>Módulo Bluetooth HC-05</h3>
+                    <img src="fotos/modulo bluetooth.png" alt="Bluetooth Module">
+                </div>
+                <div class="component-card">
+                    <h3>Motores y Ruedas</h3>
+                    <img src="fotos/rueda.png" alt="Motors">
+                </div>
+                <div class="component-card">
+                    <h3>Baterías 18650</h3>
+                    <img src="fotos/pilas.png" alt="Batteries">
+                </div>
+                <div class="component-card">
+                    <h3>Interruptor</h3>
+                    <img src="fotos/boton.png" alt="Switch">
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="componente-tabla">
+            <h1 class="title">materiales</h1>
+            
+            <table class="components-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Precio usd$</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Placa Arduino</td>
+                        <td>Arduino</td>
+                        <td>UNO R3</td>
+                        <td>27.60$</td>
+                        <td><center><a href="#" class="nav-button" onclick="window.location.href='https://www.amazon.com/-/es/A000066-Arduino-Uno-R3-Microcontrolador/dp/B008GRTSV6?th=1'">Ver más</a></center></td>
+                    </tr>
+                    <tr>
+                        <td>Motorshield</td>
+                        <td>Generic</td>
+                        <td>L293D</td>
+                        <td>6,42$</td>
+                        <td><center><a href="#" class="nav-button" onclick="window.location.href='https://www.mercadolibre.com.ar/motor-shield-driver-l293d-paso-a-paso-dc-servo-arduino-l293/p/MLA32491308#polycard_client=search-nordic&wid=MLA1666004400&sid=search&searchVariation=MLA32491308&position=1&search_layout=grid&type=product&tracking_id=a176ed68-fce7-40a0-a1e7-5ec864eed43e'">Ver más</a></center></td>
+                    </tr>
+                    <tr>
+                        <td>Módulo Bluetooth</td>
+                        <td>Generic</td>
+                        <td>HC-05</td>
+                        <td>5,04$</td>
+                        <td><center><a href="#" class="nav-button" onclick="window.location.href='https://www.mercadolibre.com.ar/modulo-bluetooth-hc05-maestro-esclavo-uart-ttl-at-desarrollo/p/MLA34500122#polycard_client=search-nordic&wid=MLA1711652826&sid=search&searchVariation=MLA34500122&position=2&search_layout=grid&type=product&tracking_id=0b14282e-75c5-4b0c-bc7d-65b73bb5b8f0'">Ver más</a></center></td>
+                    </tr>
+                    <tr>
+                        <td>Motores y Ruedas x2 </td>
+                        <td>Kuonshung</td>
+                        <td>Robot</td>
+                        <td>7,11$</td>
+                        <td><center><a href="#" class="nav-button" onclick="window.location.href='https://articulo.mercadolibre.com.ar/MLA-1117400769-kit-rueda-goma-reforzada-x-1-motor-dc-x-1-arduino-robot-_JM#polycard_client=search-nordic&position=5&search_layout=grid&type=item&tracking_id=1c09e4c3-e2dc-4536-a67b-d6fd2a7c5907'">Ver más</a></center></td></td>
+                    </tr>
+                    <tr>
+                        <td>Baterías x3 </td>
+                        <td>ultra fire</td>
+                        <td>BRC18650</td>
+                        <td>12,78$</td>
+                        <td><center><a href="#" class="nav-button" onclick="window.location.href='https://articulo.mercadolibre.com.ar/MLA-1176979582-pila-18650-37v-7800mah-li-ion-bateria-recargable-con-teton-_JM#polycard_client=search-nordic&position=2&search_layout=stack&type=item&tracking_id=3a05ea12-8bae-4493-b67e-18f017da8c69'">Ver más</a></center></td></td>
+                    </tr>
+                    <tr>
+                        <td>Interruptor</td>
+                        <td>Candy-Ho</td>
+                        <td>Generic</td>
+                        <td>1,83$</td>
+                        <td><center><a href="#" class="nav-button" onclick="window.location.href='https://articulo.mercadolibre.com.ar/MLA-897448295-tecla-llave-switch-interruptor-10x15mm-250v-3a-2-pines-negra-_JM#polycard_client=search-nordic&position=25&search_layout=grid&type=item&tracking_id=954334d3-e3c0-42e5-bd0c-74a7139333f4'">Ver más</a></center></td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="nav-container">
+            <div class="chapter-nav">
+                <button class="nav-btn" type="button">
+                    <i class="arrow left"></i>
+                </button>
+                <select class="chapter-select" id="chapterSelect" onchange="navigateToPage()">
+                    <option value="index.html">Página 1</option>
+                    <option value="pag2.html">Página 2</option>
+                    <option value="pag3.html">Página 3</option>
+                </select>
+                <button class="nav-btn" type="button" onclick="window.location.href='pag2.html'">
+                    <i class="arrow right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+        <script src="javascript/boton.js"></script>
+</body>
+</html>

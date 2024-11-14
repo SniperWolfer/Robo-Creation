@@ -1,0 +1,91 @@
+.nav-container {
+    width: 100%;
+    max-width: 500px;
+    background: linear-gradient(180deg, #1a237e 0%, #311b92 100%);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(236, 42, 42, 0.3);
+    /* Agregar estas propiedades para centrar */
+    margin: 0 auto;
+    position: relative;
+    left: 25%;
+    transform: translateX(-50%);
+}
+
+.chapter-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(180deg, #1a237e 0%, #311b92 100%);
+    border-radius: 4px 4px 0 0;
+}
+
+.nav-btn {
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    background: #00796b;
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chapter-select {
+    flex: 1;
+    margin: 0 10px;
+    padding: 8px;
+    border: 1px solid #1a237e; /* corrected */
+    background: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    border-top: 1px solid #1a237e; /* corrected */
+}
+
+.nav-btn.prev {
+    background: #607d8b;
+}
+
+.nav-btn.next {
+    background: #2196f3;
+}
+
+.nav-btn.next:hover {
+    background: #1a237e;
+}
+
+/* Botones con flechas */
+.arrow {
+    border: solid #1a237e;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 5px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+}

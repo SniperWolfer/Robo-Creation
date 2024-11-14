@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Robot - Componentes</title>
+    <link rel="stylesheet" href="css/sigpagina.css">
+    <link rel="stylesheet" href="css/Principal.css">
+    <link rel="stylesheet" href="javascript/boton.js">
+    <link rel="stylesheet" href="css/pag2.css">
+</head>
+<body>
+
+	<header class="barra_principal">
+        <div class="contenido_barra">
+            <div class="logo">
+                <div class="circulo-logo"></div>
+                Robot Wiki
+            </div>
+            <left><nav class="links-arriva">
+                <a href="index.html">inicio</a>
+                <a href="pag3.html">Codigo</a>
+            </left></nav>
+
+        </div>
+    </header>
+
+	<div class="main-content">
+        <div class="Tipografia">
+            <section class="component-section">
+                <div class="caja-foto">
+					<h1 class="title"></h1>
+					<p>
+						<h1 class="title">tutorial del armado</h1>
+						<div class="letra">
+							<h3>
+								El primer paso para armar el robot es conectar el Arduino con el motor shield. Asegúrate de alinear correctamente los pines y conectarlos sin aplicar fuerza excesiva. Debe quedar haci:
+							</h3>
+								<img src="fotos/motor con arduino.jpg" alt="golpe"width=600 height=600>
+							<h3>
+								El siguiente paso es conectar o soldar los motores a los pines M1 y M2, asegurándote de que las conexiones coincidan con la polaridad correcta.
+							</h3>
+								<img src="fotos/l239d-servo-optimized.jpg" alt="golpe"width=1135 height=600>
+							<h3>
+								luego de ello conectar el modulo bluetooth Maron:S ser1 Naranja:S servo_2 Negro: + Rojo: -
+							</h3>
+								<img src="fotos/motor con bluethot.png" alt="golpe"width=1135 height=600>
+							<h3>
+								Después, coloca las pilas para alimentar el sistema. Conecta el terminal negativo al conector -M del motor shield. Conecta el terminal positivo al motor shield pasando primero por un interruptor, y luego conecta el otro lado del interruptor al conector +M llamado gnd.  
+							</h3>
+								<img src="fotos/completo.png" alt="golpe"width=1135 height=600>
+							<h3>
+								Después, conecta el cable tipo B al Arduino y carga el código (que se encuentra en la siguiente página) utilizando la aplicación de Arduino.
+							</h3>
+						</div>
+					</p>
+                </div>
+            </section>
+        </div>
+	<div class="nav-container">
+		<div class="chapter-nav">
+			<button class="nav-btn" type="button"onclick="window.location.href='index.html'">
+				<i class="arrow left"></i>
+			</button>
+			<select class="chapter-select" id="chapterSelect" onchange="navigateToPage()">
+				<option value="index.html">Página 1</option>
+				<option value="pag2.html">Página 2</option>
+				<option value="pag3.html">Página 3</option>
+			</select>
+			<button class="nav-btn" type="button" onclick="window.location.href='pag3.html'">
+				<i class="arrow right"></i>
+			</button>
+		</div>
+	</div>
+	</div>
+	<script src="javascript/boton.js"></script>
+</body>
+</html>
